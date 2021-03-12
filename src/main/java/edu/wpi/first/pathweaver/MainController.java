@@ -370,6 +370,20 @@ public class MainController {
     }
   }
 
+  @FXML
+  private void help() {
+    try {
+      Pane root = FXMLLoader.load(getClass().getResource("help.fxml"));
+      Scene scene = fieldDisplay.getScene();
+      Stage primaryStage = (Stage) scene.getWindow();
+      primaryStage.setMaximized(false);
+      primaryStage.setResizable(false);
+      scene.setRoot(root);
+    } catch (IOException e) {
+      LOGGER.log(Level.WARNING, "Couldn't load help screen", e);
+    }
+  }
+
   public void setDirectory(String directory) {
     this.directory = directory;
   }

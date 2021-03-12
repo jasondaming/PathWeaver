@@ -44,6 +44,7 @@
          <ToolBar prefHeight="40.0" prefWidth="200.0">
             <Button mnemonicParsing="false" onAction="#buildPaths" text="Build Paths"/>
             <Button mnemonicParsing="false" onAction="#editProject" text="Edit Project"/>
+            <Button mnemonicParsing="false" onAction="#help" text="Help"/>
          </ToolBar>
       </VBox>
     </right>
